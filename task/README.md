@@ -14,8 +14,8 @@ http://localhost:8081/template3?user_name=%D0%9F%D0%B5%D1%82%D1%80&area_name=%D0
 ```...
    private final Map<String, String> templates = new ConcurrentHashMap<>();
    ...
-   templates.put("template1", Files.readString(Path.of("template1.txt")));
-   templates.put("template2", Files.readString(Path.of("template2.txt")));
+   templates.put("template1", Files.readString(Path.of("src/main/resources/template1.txt")));
+   templates.put("template2", Files.readString(Path.of("src/main/resources/template2.txt")));
    ...
 ```
 
